@@ -1,6 +1,6 @@
 # Horario UCI
 
-Android app to manage classes scheduling in the UCI. First published on [humanos.uci.cu](https://humanos.uci.cu/2014/03/humancode-horario-uci/). **(Old project ;)**
+Android app to manage class scheduling in the UCI. First published on [humanos.uci.cu](https://humanos.uci.cu/2014/03/humancode-horario-uci/). **(Old project ;)**
 
 ## Usage
 
