@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- <item -->
+    <!-- android:id="@+id/action_actualizarHorario" -->
+    <!-- android:orderInCategory="100" -->
+    <!-- android:showAsAction="never" -->
+    <!-- android:title="@string/actualizar_horario"/> -->
+    <item
+        android:id="@+id/action_cambiarModo"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Conectar/desconectar"/>
+
+</menu>

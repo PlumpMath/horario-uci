@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="opcionMenuOpciones">Opciones</string>
+    <string name="app_name">HorarioUCI</string>
+    <string name="title_section1">Tus Datos</string>
+    <string name="title_section2">Tu Horario</string>
+
+    <string-array name="facultades">
+        <item>Selecciona tu facultad</item>
+        <item>Facultad 1</item>
+        <item>Facultad 2</item>
+        <item>Facultad 3</item>
+        <item>Facultad 4</item>
+        <item>Facultad 5</item>
+        <item>Facultad 6</item>
+        <item>Facultad 7</item>
+    </string-array>
+
+    <string name="textoFacultad">Cual es tu facultad?</string>
+    <string name="textoSemana">Qué semana que deseas ver?</string>
+    <string name="textoBrigada">Tu brigada es la:</string>
+    <string name="title_activity_db_test">DbTestActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_horario">HorarioActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="ver_horario">Ver horario</string>
+    <string name="descargar_y_ver_horario">Descargar horario</string>
+    <string name="title_activity_vista_horario">VistaHorarioActivity</string>
+    <string name="title_activity_inicio">InicioActivity</string>
+    <string name="opcionmenuactualizarfacultades">opcionMenuActualizarFacultades</string>
+    <string name="opcionmenuactualizarsemanas">opcionMenuActualizarSemanas</string>
+    <string name="actualizar_horario">Actualizar horario</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="favorito">Favorito</string>
+    <string name="actualizar_calendario">Actualizar Calendario</string>
+    <string name="title_activity_horario_uciupdate">HorarioUCI - Iniciar servicio de actualización</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

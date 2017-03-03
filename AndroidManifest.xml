@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uci.horarioUCI"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_horario_uci"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="uci.horarioUCI.VistaPrincipalActivity"
+            android:label="Horario - UCI"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="uci.horarioUCI.VistaHorarioActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Mi horario"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="uci.horarioUCI.tools.ServiceHorarioUpdate"
+            android:icon="@drawable/ic_launcher_on"
+            android:process=":ServiceHorarioUpdate" >
+        </service>
+
+        <!-- <activity -->
+        <!-- android:name="uci.horarioUCI.HorarioUCIUpdate" -->
+        <!-- android:icon="@drawable/ic_update" -->
+        <!-- android:label="@string/title_activity_horario_uciupdate" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+
+        <service
+            android:name="uci.horarioUCI.UpdateService.ServiceHorarioUpdate"
+            android:process=":ServiceHorarioUpdate" >
+        </service>
+        <!-- Receive Wi-Fi connection state changes -->
+        <receiver android:name="uci.horarioUCI.UpdateService.WifiReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="uci.horarioUCI.UpdateService.HorarioUCI_serviceWidget"
+            android:icon="@drawable/ic_launcher_on"
+            android:label="HorarioUCI" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider" />
+        </receiver>
+    </application>
+
+</manifest>
